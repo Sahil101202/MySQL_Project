@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Items</title>
+    <link rel="stylesheet" href="add_item.css">
+</head>
+<body>
+    <div class="container">
+        <hr>
+        <h1 align="center">Administrative</h1>
+        <hr>
+        <nav class="pages">
+            <a href="add_item.html" class="pages-link">Add Items</a>
+            <a href="modify_item.html" class="pages-link">Modify Items</a>
+            <a href="delete_item.html" class="pages-link">Delete Items</a>
+            <a href="all_customers.html" class="pages-link">All Customers</a>
+            <a href="index.html" class="pages-link">Logout</a>
+        </nav>
+        <hr>
+        <h2 align ="center">Add food Item</h2>
+        <hr>
+        <form action="add_item.php" method="post" enctype="multipart/form-data">
+            <div class="login-form">
+                <div class="form-input">
+                    <label for="food_name">Food Name</label>
+                    <input type="text" name="food_name" id="food_name" placeholder="pizza" autocomplete="off" class="form-control" required>
+                </div>
+                <div class="form-input">
+                    <label for="price">Price</label>
+                    <input type="int" name="price" id="price" placeholder="50" autocomplete="off" class="form-control" required>
+                </div>
+                <label for="field">Select Food Type</label>
+                <fieldset class="radio" id="field">
+                    <div class="form-input">
+                        <label for="pizza">Pizza</label>
+                        <input type="radio" name="food_type" value="pizza" id="pizza" class="form-control" >
+                    </div>
+                    <div class="form-input">
+                        <label for="pasta">Pasta</label>
+                        <input type="radio" name="food_type" value="pasta" id="pasta" class="form-control" >
+                    </div>
+                    <div class="form-input">
+                        <label for="starter">Starter</label>
+                        <input type="radio" name="food_type" value="starter" id="starter" class="form-control" >
+                    </div>
+                    <div class="form-input">
+                        <label for="dessert">Dessert</label>
+                        <input type="radio" name="food_type" value="dessert" id="dessert" class="form-control" >
+                    </div>
+                    <div class="form-input">
+                        <label for="sendwich">Sendwich</label>
+                        <input type="radio" name="food_type" value="sendwich" id="sendwich" class="form-control" >
+                    </div>
+                    <div class="form-input">
+                        <label for="spagheti">Spagheti</label>
+                        <input type="radio" name="food_type" value="spagheti" id="spagheti" class="form-control" >
+                    </div>
+                </fieldset>
+                <div class="form-input">
+                    <label for="image">Image</label>
+                    <input type="file" name="img" id="image" placeholder="photo" autocomplete="off" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn">Add</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
